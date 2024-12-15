@@ -1,0 +1,156 @@
+{
+    "locales": {
+        "en": {
+            "title": "Welcome!",
+            "title_menu": "About me",
+            "title_long_prefix": "Hello...",
+            "title_long": "I'm **Nirmal Ravidas!**"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "contact_list",
+            "component": "ArticleGrid",
+            "config": {
+                "ignorePaddingTop": true,
+                "format": "inline"
+            },
+            "locales": {
+                "en": {}
+            },
+
+            "items": [
+                {
+                    "value": "Web Developer",
+                    "links": [
+                        {"href": null}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-city",
+                        "faColors": {"bg": null, "fill": null}
+                    }
+                },
+                {
+                    "value": "nirmalravidas.email@gmail.com",
+                    "links": [
+                        {"href": "mailto:nirmalravidas.email@gmail.com"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-envelope",
+                        "faColors": {"bg": null, "fill": null}
+                    }
+                },
+                {
+                    "value": "@nirmalravidas",
+                    "links": [
+                        {"href": "https://github.com/nirmalravidas"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-github",
+                        "faColors": {"bg": null, "fill": null}
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": "short_description",
+            "component": "ArticleInfoBlock",
+            "config": {},
+            "locales": {
+                "en": {"title": "**A little bit** about me..."}
+            },
+
+            "items": [
+                {
+                    "icon": {
+                        "img": "images/svg/logo.svg",
+                        "fa": null,
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"text": "<p>I’m a <b>full-stack developer</b> skilled in Java, Node.js, Next.js, and React.js. I focus on building scalable backend systems and creating user-friendly, dynamic frontends.</p><p>With experience in both backend and frontend development, I enjoy solving complex problems and delivering clean, efficient solutions tailored to project needs.</p>"}
+                    }
+                }
+            ]
+        },
+
+
+        {
+            "id": "interests",
+            "component": "ArticleGrid",
+            "config": {
+                "format": "grid"
+            },
+            "locales": {
+                "en": {"title": "Personal **interests**"}
+            },
+
+            "items": [
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-video",
+                        "faColors": null
+                    },
+                    "value": null,
+                    "locales": {
+                        "en": {
+                            "title": "AI video editing",
+                            "info": "Learning to use AI tools to enhance my videos."
+                        }
+                    }
+                },
+
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-chart-line",
+                        "faColors": null
+                    },
+                    "value": null,
+                    "locales": {
+                        "en": {
+                            "title": "Investing",
+                            "info": "Learning the basics of stocks and personal finance."
+                        }
+                    }
+                },
+
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-pencil-alt",
+                        "faColors": null
+                    },
+                    "value": null,
+                    "locales": {
+                        "en": {
+                            "title": "UX design",
+                            "info": "Studying user experience principles."
+                        }
+                    }
+                },
+
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-camera-retro",
+                        "faColors": null
+                    },
+                    "value": null,
+                    "locales": {
+                        "en": {
+                            "title": "Photo editing",
+                            "info": "Enhancing photos through creative editing techniques."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

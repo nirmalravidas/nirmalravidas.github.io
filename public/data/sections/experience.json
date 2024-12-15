@@ -1,0 +1,40 @@
+{
+    "locales": {
+        "en": {
+            "title": "Experience",
+            "title_long_prefix": "Summary of my",
+            "title_long": "**Work** Experience"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "work",
+            "component": "ArticleTimeline",
+            "config": {},
+            "locales": {},
+
+            "items": [
+                {
+                    "icon": {
+                        "img": "images/pictures/place-7.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "03/09/2023",
+                        "end": "continue"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**Freelance** Web Developer",
+                            "info": "Freelancer",
+                            "text": "<p>I worked as a Freelancer.</p><ul><li>Developed full-stack web applications using Node.js, Next.js, and React.js.</li><li>Designed and implemented scalable backend systems and dynamic, responsive frontends.</li><li>Collaborated with clients to understand their requirements and delivered customized solutions.</li><li>Ensured code quality and maintained clean, efficient, and well-documented code.</li><li>Worked on projects ranging from small websites to more complex applications, adapting to diverse project needs.</li></ul>",
+                            "tags": ["PostgreSQL", "Next.js", "Node.js", "React.js", "mongodb"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

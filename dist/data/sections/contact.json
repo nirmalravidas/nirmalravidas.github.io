@@ -1,0 +1,80 @@
+{
+    "locales": {
+        "en": {
+            "title": "Contact",
+            "title_long_prefix": "Don't hesitate to",
+            "title_long": "**Contact** Me"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "contact_form",
+            "component": "ArticleContactForm",
+            "config": {},
+            "locales": {
+                "en": {"title": "Send me a **message**"}
+            },
+
+            "items": null
+        },
+
+        {
+            "id": "contact_list",
+            "component": "ArticleGrid",
+            "config": {
+                "format": "grid"
+            },
+            "locales": {
+                "en": {"title": "Or if you **prefer**..."}
+            },
+
+            "items": [
+                {
+                    "value": "+1 (123) 456-7890",
+                    "links": [
+                        {"href": "tel:11234567890"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-phone",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "Phone"}
+                    }
+                },
+
+                {
+                    "value": "nirmalravidas.email@gmail.com",
+                    "links": [
+                        {"href": "mailto:nirmalravidas.email@gmail.com"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-envelope",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "E-mail"}
+                    }
+                },
+
+                {
+                    "value": "@nirmalravidas",
+                    "links": [
+                        {"href": "https://linkedin.com/in/nirmalravidas"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-linkedin",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "Linkedin"}
+                    }
+                }
+            ]
+        }
+    ]
+}

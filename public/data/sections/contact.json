@@ -1,0 +1,56 @@
+{
+    "locales": {
+        "en": {
+            "title": "Contact",
+            "title_long_prefix": "Don't hesitate to",
+            "title_long": "**Contact** Me"
+        }
+    },
+
+    "articles": [
+
+        {
+            "id": "contact_list",
+            "component": "ArticleGrid",
+            "config": {
+                "format": "grid"
+            },
+            "locales": {
+                "en": {"title": "You can contact me at..."}
+            },
+
+            "items": [
+
+                {
+                    "value": "nirmalravidas.email@gmail.com",
+                    "links": [
+                        {"href": "mailto:nirmalravidas.email@gmail.com"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-envelope",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "E-mail"}
+                    }
+                },
+
+                {
+                    "value": "@nirmalravidas",
+                    "links": [
+                        {"href": "https://linkedin.com/in/nirmalravidas"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-linkedin",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "Linkedin"}
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "locales": {
+        "en": {
+            "title": "Education",
+            "title_long_prefix": "This is my",
+            "title_long": "**Educational** Background"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "academic",
+            "component": "ArticleTimeline",
+            "config": {},
+            "locales": {},
+
+            "items": [
+                {
+                    "icon": {
+                        "img": "images/pictures/place-5.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "07/23/2024",
+                        "end": "07/23/2028"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**BTech** in Computer Science and Engineering",
+                            "info": "Jharkhand University of Technology (JUT)",
+                            "text": "Pursuing BTech in Computer Science from Chaibasa Engineering College, affiliated with Jharkhand University of Technology, focusing on programming and software development.",
+                            "tags": []
+                        }
+                    }
+                },
+
+                {
+                    "icon": {
+                        "img": "images/pictures/place-4.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "07/23/2006",
+                        "end": "07/23/2023"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**Primary and Secondary** Education",
+                            "info": "Jharkhand Academic Council (JAC) Board",
+                            "text": "Completed primary and secondary education (1st to 12th grade) from the Jharkhand Academic Council (JAC) Board.",
+                            "tags": []
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
