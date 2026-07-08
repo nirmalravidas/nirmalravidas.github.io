@@ -21,7 +21,7 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Nirmal Ravidas | Backend Developer" />
-  <meta name="twitter:description" content="Java and Spring Boot backend developer focused on REST APIs, microservices, and reliable web systems." />
+  <meta name="twitter:description" content="Java and Spring Boot backend developer focused on Backend Development, microservices, and reliable web systems." />
   <meta name="twitter:image" content="https://nirmalravidas.github.io/nirmal-ravidas-profile.jpeg" />
   <meta name="theme-color" content="#f6f8fb" id="themeColor" />
 
@@ -406,6 +406,33 @@
       flex-wrap: wrap;
       gap: 7px;
     }
+    .profile-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .profile-link {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--surface);
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: .72rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+    }
+    .profile-link:hover {
+      border-color: color-mix(in srgb, var(--brand) 40%, var(--line));
+      background: var(--brand-soft);
+      color: var(--brand);
+      transform: translateY(-1px);
+    }
     .pill {
       padding: 6px 9px;
       border: 1px solid var(--line);
@@ -715,6 +742,7 @@
         grid-template-columns: 92px 1fr;
         gap: 14px;
       }
+      .profile-links { grid-template-columns: 1fr; }
       .hero-summary { gap: 14px; }
       .quick-grid,
       .stats-grid,
@@ -784,7 +812,9 @@
       { "label": "Skills", "href": "#skills" },
       { "label": "Experience", "href": "#experience" },
       { "label": "Projects", "href": "#projects" },
-      { "label": "Contact", "href": "#contact" }
+      { "label": "Contact", "href": "#contact" },
+      { "label": "Github", "href": "https://github.com/nirmalravidas"},
+      { "label": "LeetCode", "href": "https://LeetCode.com/nirmalravidas"}
     ],
     "hero": {
       "eyebrow": "Backend Developer",
@@ -804,6 +834,11 @@
         { "value": "Java", "label": "Primary stack" },
         { "value": "Backend Development", "label": "Core focus" },
         { "value": "5+ Projects", "label": "Built and shipped" }
+      ],
+      "profileLinks": [
+        { "label": "LinkedIn", "href": "https://linkedin.com/in/nirmalravidas" },
+        { "label": "GitHub", "href": "https://github.com/nirmalravidas" },
+        { "label": "LeetCode", "href": "https://leetcode.com/nirmalravidas" }
       ],
       "stack": ["Java", "Spring Boot", "PostgreSQL", "MongoDB", "Docker"]
     },
@@ -1017,6 +1052,11 @@
                       <p class="quick-label">${escapeHTML(fact.label)}</p>
                       <p class="quick-value">${escapeHTML(fact.value)}</p>
                     </div>
+                  `).join("")}
+                </div>
+                <div class="profile-links" aria-label="Profile links">
+                  ${content.hero.profileLinks.map((link) => `
+                    <a class="profile-link" href="${escapeHTML(link.href)}"${linkAttrs(link.href)}>${escapeHTML(link.label)}</a>
                   `).join("")}
                 </div>
                 <div class="stack-strip" aria-label="Key technologies">
