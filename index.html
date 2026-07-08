@@ -993,7 +993,7 @@
     const isExternal = (href = "") => /^https?:\/\//.test(href);
     const tags = (items = []) => items.map((tag) => `<span class="tag">${escapeHTML(tag)}</span>`).join("");
     const pills = (items = []) => items.map((pill) => `<span class="pill">${escapeHTML(pill)}</span>`).join("");
-    const linkAttrs = (href = "") => isExternal(href) ? ' target="_blank" rel="noopener"' : "";
+    const linkAttrs = (href = "") => isExternal(href) ? ' target="_blank" rel="noopener noreferrer"' : "";
 
     function renderNav() {
       const brand = document.querySelector(".brand");
@@ -1004,7 +1004,7 @@
       `;
 
       navLinks.innerHTML = content.navigation.map((item) => `
-        <li><a href="${escapeHTML(item.href)}">${escapeHTML(item.label)}</a></li>
+        <li><a href="${escapeHTML(item.href)}"${linkAttrs(item.href)}>${escapeHTML(item.label)}</a></li>
       `).join("");
     }
 
